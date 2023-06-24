@@ -228,3 +228,44 @@ header a:hover {
 i[class*='van-type-'] {
     padding: 7px 14px;
 }
+
+/* van Detail */ 
+
+
+main.detail-page{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+}
+header.detail-header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    margin: auto;
+}
+
+header.detail-header > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f456b;
+}
+
+img.detail-image {
+    width: 100%;
+    background-size: auto;
+    margin-top: 15vh;
+    border-radius: 15px;
+}
+
+div.detail-body {
+   width: 80%;
+   color: #162636;
+   font-size: 1.6rem;
+   margin: auto;
+
+}

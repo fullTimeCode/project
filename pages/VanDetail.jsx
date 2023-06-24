@@ -12,19 +12,24 @@ export default function VanDetail() {
     }, [params])
     
     return (
-        <>
+        <main className="detail-page">
             {
-                van ? (<main className="van-detail">
-                    <header>
-                        <img src={ van.imageUrl } alt={van.name + " image"} />
+                van ? (<article className="detail-article">
+                    <header className="detail-header">
+                        <h2> {van.name} </h2>
+                        <img className="detail-image" src={van.imageUrl} alt={`${van.name} image`} />
                     </header>
 
-                    <h2> {van.name} </h2>
-                    <p> ${van.price}<span>/day</span></p>
-                     <p> {van.description}</p>
+                    <div className="detail-body">
+                        <p> ${van.price}<span>/day</span></p>
+                        <p> {van.description}</p>
+                    </div>
+
+                   
                     
-                </main> ):<h1>Loading...</h1>
+                    
+                </article> ):<h1>Loading...</h1>
             }
-        </>
+        </main>
     )
 }
