@@ -293,3 +293,28 @@ div.detail-body {
    margin: auto;
 
 }
+main.host-layout {
+    padding: 0 23px;
+
+}
+
+main.host-layout header nav {
+    width: fit-content;    
+}
+
+main.host-layout header nav a {
+    text-decoration: none;
+    color: #113E49;
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: #E1b694;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: all 320ms ease-in-out;
+}
+main.host-layout header nav a:hover {  
+    color: #415E79;
+    background-color: #E7bfa4;
+}

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, Outlet  } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+
 const HostLayout = () => {
   return (
-      <>
-        <header className="">
+      <main className="host-layout">
+        <header >
             <nav>
                 <Link to="/host">Host</Link>
                 <Link to="/host/income">Income</Link>
@@ -12,7 +13,7 @@ const HostLayout = () => {
         </header>
         <h1> Host </h1>
         <Outlet  />
-      </>
+      </main>
   )
 }
 
