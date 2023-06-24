@@ -338,3 +338,9 @@ footer {
     left: 0;
     right: 0;
 }
+
+a.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
+}
