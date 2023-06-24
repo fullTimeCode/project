@@ -14,8 +14,12 @@ body::-webkit-scrollbar {
 }
 
 body {
+  margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding-bottom: 12vh;
+  height: 100%;
+  position: relative;
 }
 
 header {
@@ -317,4 +321,20 @@ main.host-layout header nav a {
 main.host-layout header nav a:hover {  
     color: #415E79;
     background-color: #E7bfa4;
+}
+
+footer {
+    background-color: #161616;
+    color: #AAAAAA;
+    height: 10vh;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
