@@ -344,3 +344,55 @@ a.active-link {
     text-decoration: underline;
     color: #161616;
 }
+
+a.host-van-link {
+    text-decoration: none;
+    color: #161626;
+    display: block;
+    width: 90%;
+    height: 20vh;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+a.host-van-link:hover {
+    cursor: pointer;
+}
+
+
+
+.single-van-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    gap: 20px;
+    height: 20vh;
+    margin: 0 auto;
+  
+}
+div.van-image{
+    height: 100%;
+
+}
+.host-van-image img {
+     height: 20vh;
+     width: auto;
+     border-radius: 5px 0 0 5px;
+     object-fit: contain;
+}
+.van-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.van-info h3 {
+    margin: 0;
+}
+
+.van-info p {
+    margin: 0;
+}
