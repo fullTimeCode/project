@@ -5,9 +5,10 @@ const Header = () => {
   return (
         <header>
             <Link className="site-logo" to="/">#ExcitingVanLife</Link>
-            <nav>
-            <Link to="/about">About</Link>
-            <Link to="/vans">Vans</Link>
+          <nav>
+            <Link to="host">Host</Link>
+            <Link to="about">About</Link>
+            <Link to="vans">Vans</Link>
             </nav>
       </header>
   )
