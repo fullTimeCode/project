@@ -45,7 +45,7 @@ const HostVanDetail = () => {
             <NavLink style={({isActive}) => isActive ? activeStyles: null}  to="photos" className="current-host-van-link">Photos</NavLink>
       </nav>
       <>
-        <Outlet  /> 
+        <Outlet context={{ currentVan }} /> 
       </>
       
   </main>
