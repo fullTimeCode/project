@@ -478,5 +478,11 @@ main.current-host-van-container {
 .back-link:hover {
     border-bottom: 2px solid transparent;
     color: #905010;
+}
 
+.current-host-van-type {
+    width: max-content;
+    padding: 7px 10px;
+    border-radius: 3px;
+    background-color: #d0aa90;
 }
