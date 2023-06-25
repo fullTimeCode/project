@@ -441,3 +441,43 @@ main.current-host-van-container {
     display: inline-flex;
     gap: 20px;
 }
+
+.back-link {
+
+}
+
+.current-host-van-link, .back-link {
+    text-decoration: none;
+    color: #161616;
+    max-width: 40px;
+    text-align: center;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 330ms ease-in-out;
+
+}
+
+.back-link {
+    max-width: fit-content;
+    padding: 0 10px;
+}
+
+.back-link span {
+    margin-right: 5px;
+}
+
+
+
+
+.current-host-van-link:hover, .back-link:hover {
+    border-bottom: 2px solid #363636;
+    color: #363636;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    border-bottom: 2px solid transparent;
+    color: #365676;
+
+}
