@@ -18,7 +18,6 @@ const HostLayout = () => {
                 
             </nav>
         </header>
-        <h1> Host </h1>
         <Outlet  />
       </main>
   )

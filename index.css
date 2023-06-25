@@ -396,3 +396,48 @@ div.van-image{
 .van-info p {
     margin: 0;
 }
+
+
+/* Host Van Detail Pages Styles */
+
+main.current-host-van-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #FeFefe;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.current-host-van-header {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 20px;
+    height: 30%;
+    justify-content: center;
+    padding: 0;
+}
+
+.current-host-van-image {
+     height: 100%;
+     width: auto;
+}
+
+.current-host-van-image img {
+     height: 20vh;
+     width: auto;
+     object-fit: cover;
+     border-radius: 7px;
+}
+
+.current-host-van-info {
+    width: 100%;
+}
+
+.current-host-van-links {
+    display: inline-flex;
+    gap: 20px;
+}

@@ -27,10 +27,9 @@ const HostVans = () => {
 
   return (
       <div><h1>Your Vans</h1>
-          {
-              hostVansEl
-          }
-          
+          {   vans.length > 0 ?
+              hostVansEl : <p>Loading...</p>
+          }    
     </div>
   )
 }
