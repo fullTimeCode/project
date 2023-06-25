@@ -442,9 +442,6 @@ main.current-host-van-container {
     gap: 20px;
 }
 
-.back-link {
-
-}
 
 .current-host-van-link, .back-link {
     text-decoration: none;
@@ -458,8 +455,10 @@ main.current-host-van-container {
 }
 
 .back-link {
+    color: #a05a20;
     max-width: fit-content;
     padding: 0 10px;
+
 }
 
 .back-link span {
@@ -478,6 +477,6 @@ main.current-host-van-container {
 
 .back-link:hover {
     border-bottom: 2px solid transparent;
-    color: #365676;
+    color: #905010;
 
 }
