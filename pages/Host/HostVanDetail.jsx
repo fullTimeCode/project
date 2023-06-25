@@ -1,9 +1,15 @@
 
 import React, { useState, useEffect } from 'react'
-import { useParams, Link, Outlet } from 'react-router-dom'
+import { useParams, NavLink, Outlet } from 'react-router-dom'
 
 const HostVanDetail = () => {
   const { id } = useParams()
+
+  const activeStyles = {
+    fontWeight: "bold",
+    borderBottom: "2px solid #161616",
+    color: "#161616"
+  }
   
   const [currentVan, setCurrentVan] = useState({})
   useEffect(() => {
@@ -18,7 +24,7 @@ const HostVanDetail = () => {
       {/* to=“..”  # one level up by default to parent route. Adding
       relative=“path” changes to path from default of route  and now it will go one level up in path ( from host/vans/1 to host/van ) and not to the parent route 😀 */}
 
-      <Link to=".." relative='path' className='back-link' > <span>&#x2190;</span><span>back to all vans</span></Link>
+      <NavLink to=".." relative='path' className='back-link' > <span>&#x2190;</span><span>back to all vans</span></NavLink>
       
    
 
@@ -32,25 +38,16 @@ const HostVanDetail = () => {
           <p className="current-host-van-price"> ${currentVan.price}<span>/day</span></p>
         </div>   
       </header>
-      <div className="current-host-van-links">
-            <Link to="/host/vans" className="current-host-van-link">Details</Link>
-            <Link to="/host/vans" className="current-host-van-link">Pricing</Link>
-            <Link to="/host/vans" className="current-host-van-link">Photos</Link>
-      </div>
-      <div className="current-host-van-full-detail">
-        <p className="">
-          <strong>Name</strong>: {currentVan.name }
-        </p>
-        <p className="">
-          <strong>Category</strong>: {currentVan.type}
-        </p>
-        <p className="">
-          <strong>Description</strong>: {currentVan.description}
-        </p>
-        <p className="">
-          <strong>Visibility</strong>: Public
-        </p>
-      </div>
+      <nav className="current-host-van-nav">
+            <NavLink style={({ isActive }) => isActive ? activeStyles : null} to="."
+          end className="current-host-van-link">Details</NavLink>
+            <NavLink style={({isActive}) => isActive ? activeStyles: null}  to="pricing" className="current-host-van-link">Pricing</NavLink>
+            <NavLink style={({isActive}) => isActive ? activeStyles: null}  to="photos" className="current-host-van-link">Photos</NavLink>
+      </nav>
+      <>
+        <Outlet  /> 
+      </>
+      
   </main>
   )
 }

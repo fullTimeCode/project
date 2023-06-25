@@ -437,7 +437,7 @@ main.current-host-van-container {
     width: 100%;
 }
 
-.current-host-van-links {
+.current-host-van-nav {
     display: inline-flex;
     gap: 20px;
 }
